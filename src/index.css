@@ -23,6 +23,20 @@
   --color-grey-dark-2: #999;
   --color-grey-dark-3: #333;
 
+  --clr-primary: hsl(0, 50%, 98%);
+  --body-bg: linear-gradient(120deg, hsl(0, 0%, 18%) 10%, hsl(0, 0%, 2%));
+  --inner-bg: black;
+
+  --card-inner-width: 14em;
+  --card-inner-height: 21em;
+
+  /* animation props */
+  --ty-duration: 0.6s;
+  --bar-grow-duration: 0.4s;
+  --visible-duration: 0.4s;
+  --visible-delay: 0.6s;
+  --bg-zoom-duration: 0.4s;
+
   /* Font family */
   --font-family-base: 'Lato', sans-serif;
   --font-family-monospace: Menlo, 'IBM Plex Mono', Menlo, monospace;
@@ -431,11 +445,18 @@ video {
   line-height: 1.8;
   padding-bottom: 4.5rem;
 }
+.step-description-tertiary {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  font-weight: 700;
+  padding-bottom: 4.5rem;
+  padding: 1rem;
+}
 
 .step-img-box {
   position: relative;
-
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 
@@ -443,23 +464,11 @@ video {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; */
-
-  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
 }
 
-.step-img-box-one {
-  position: relative;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  background-image: url(./assets/nest-vision.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+.step-img {
+  min-width: 380px;
+  padding: 4rem 0;
 }
 
 .step-img-box::before,
@@ -471,6 +480,7 @@ video {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
 }
 
 .step-img-box::before {
@@ -494,6 +504,212 @@ video {
 .step-img {
   width: 45%;
   /* z-index: 10; */
+}
+
+.card {
+  background: var(--card-bg, none);
+  color: var(--card-default-color, white);
+  padding: var(--card-padding, 1rem);
+}
+
+/* container */
+.card > .card-container {
+  width: var(--card-inner-width, 14em);
+  height: var(--card-inner-height, 21em);
+
+  position: relative;
+  overflow: hidden;
+
+  background: var(--inner-bg, grey);
+  background-size: cover;
+
+  border-radius: var(--inner-border-radius, 1em);
+}
+
+/* image */
+.card > .card-container > img {
+  width: 100%;
+  object-fit: cover;
+
+  /* valid for non-pointer devices also */
+  transition-duration: var(--bg-zoom-duration, 1s);
+  transition-property: transform;
+}
+
+/* meta group */
+.card > .card-container > .meta {
+  position: absolute;
+  padding: var(--inner-padding, 1rem);
+  bottom: 0;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  gap: 0.8rem;
+
+  /* background: linear-gradient(
+    hsla(0, 0%, 0%, 0),
+    hsla(0, 0%, 0%, 0.6) 10%,
+    hsla(0, 0%, 0%, 1)
+  ); */
+
+  background: linear-gradient(
+    90deg,
+    hsla(319deg 62% 45%) 0%,
+    hsla(319deg 62% 45%) 11%,
+    hsla(319deg 62% 45%) 46%,
+    hsla(319deg 62% 45%) 57%,
+    hsla(319deg 62% 45%) 69%,
+    hsla(319deg 62% 45%) 70%
+  );
+}
+
+/*    title */
+.card > .card-container > .meta > h2 {
+  font-weight: 500;
+  font-size: 1.1rem;
+  line-height: 1.8rem;
+  position: relative;
+  max-width: 100%;
+  width: max-content;
+  text-align: left;
+  padding-bottom: 12rem;
+}
+
+.card > .card-container > .meta > h3 {
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  position: relative;
+  max-width: 100%;
+  width: max-content;
+  text-align: left;
+  padding-bottom: 0.9rem;
+}
+
+/* decorative line below the title*/
+/* .card > .container > .meta > h2::after {
+  content: '';
+  position: absolute;
+  width: calc(100% + var(--inner-padding, 1rem));
+  height: 3px;
+  left: calc(var(--inner-padding, 1rem) * -1);
+  bottom: 0;
+  background-color: var(--clr-primary, hsl(0, 50%, 50%));
+} */
+
+.card > .card-container > .meta > h3::after {
+  content: '';
+  position: absolute;
+  width: calc(100% + var(--inner-padding, 1rem));
+  height: 3px;
+  left: calc(var(--inner-padding, 1rem) * -1);
+  bottom: 0;
+  background-color: var(--clr-primary, hsl(0, 50%, 50%));
+}
+
+/*    paragraph */
+.card > .card-container > .meta > p {
+  font-size: 0.8rem;
+  letter-spacing: 0.015em;
+  padding-bottom: 2.2222em;
+}
+
+/*    card button*/
+.card > .card-container > .meta > button {
+  all: unset;
+  background-color: var(--clr-primary, hsl(0, 50%, 50%));
+  color: var(--card-default-color, black);
+  padding: 0.4rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  text-transform: capitalize;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.015em;
+
+  margin-bottom: 1.25em;
+}
+
+/*
+===========================================================
+ HOVER, FOCUS-WITHIN EFFECT 
+===========================================================
+ */
+
+@media (hover) {
+  .card > .card-container > .meta {
+    transform: translateY(74%);
+
+    transition-property: transform;
+    transition-duration: var(--ty-duration, 0.4s);
+    transition-timing-function: ease;
+  }
+
+  .card > .card-container > .meta > h2::after {
+    transform-origin: left;
+    transform: scaleX(0);
+  }
+
+  .card > .card-container > .meta > *:not(h2) {
+    opacity: 0;
+    transform: translateY(20%);
+
+    transition-duration: var(--visible-duration, 0.4s);
+    transition-property: transform, opacity;
+    transition-timing-function: linear;
+  }
+}
+
+/*
+  hover and focus-within state 
+*/
+.card:where(:hover, :focus-within) > .card-container > img {
+  transform: scale(1.2);
+  transition-timing-function: ease-in;
+}
+
+.card:where(:hover, :focus-within) > .card-container > .meta {
+  transform: translateY(0);
+  transition-delay: var(--bar-grow-duration, 1s);
+}
+
+.card:where(:hover, :focus-within) > .card-container > .meta > h2::after {
+  transform: scaleX(1);
+
+  transition-duration: var(--bar-grow-duration, 0.4s);
+  transition-property: transform;
+  transition-timing-function: ease;
+}
+
+.card:is(:hover, :focus-within) > .card-container > .meta > * {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: var(--visible-delay, 0.4s);
+}
+
+/*
+  Resolving bad behaviour on tab key press
+ */
+.card:focus-within > .card-container > img {
+  transition-duration: 0s;
+}
+
+.card:focus-within > .card-container > .meta {
+  transition-duration: 0s;
+  transition-delay: 0s;
+}
+
+.card:focus-within > .card-container > .meta > h2::after {
+  transition-duration: 0s;
+  transition-delay: 0s;
+}
+
+.card:focus-within > .card-container > .meta > * {
+  transition-duration: 0s;
+  transition-delay: 0s;
 }
 
 @media (max-width: 44em) {

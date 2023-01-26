@@ -77,18 +77,21 @@ function App() {
               <p className='step-description-secondary'>
                 Digital NEST creates sustainable and scalable technology
                 learning centers for Latinx youth to provide the skills,
-                network, and resources to foster economic equality. We achieve
+                network, and resources to foster economic equality.We achieve
                 this by teaching our members the technical and soft skills to be
-                competitive in our digital world, providing mentors, and
-                broadening networks to gain sustainable employment.
+                competitive in our digital world,
               </p>
               <a class='main-nav-link nav-cta' href='#cta'>
                 Donate
               </a>
             </div>
 
-            <div className='step-img-box-one'>
-              <img src='' class='step-img' alt='' />
+            <div className='step-img-box'>
+              <img src={imgOne} class='step-img' alt='' />
+              <p className='step-description-tertiary'>
+                Providing mentors, and broadening networks to gain sustainable
+                employment.
+              </p>
             </div>
 
             <div class='step-img-box'>
@@ -116,7 +119,29 @@ function App() {
               </p>
             </div>
             <div class='step-img-box'>
-              <img src='img/app/app-screen-3.png' class='step-img' alt='' />
+              <img src='' class='step-img' alt='' />
+            </div>
+          </div>
+        </section>
+
+        <section class='section-how'>
+          <div class='container grid grid--3-cols'>
+            <div class='card'>
+              <div class='card-container'>
+                <img
+                  src='https://digitalnest.org/wp-content/uploads/2022/10/PPL_thumb.png'
+                  alt=''
+                />
+                <div class='meta'>
+                  <h2>People, Projects & Leadership</h2>
+                  <h3>People, Projects & Leadership</h3>
+                  <p>
+                    Lead teams, manage projects effectively, create influential
+                    marketing campaigns & coordinate events.
+                  </p>
+                  <button type='button'>Learn more</button>
+                </div>
+              </div>
             </div>
           </div>
         </section>
