@@ -60,11 +60,13 @@ Digital NEST’s Job Training and Career Development program help youth in high 
 ## Sections
 
 - Logo + Navigation + Donate Button
-- Hero Video
-- NEST Vision
-- Stats + Digital NEST Stories
-- Get Involved (Cards)
-- Programs + Cards
-- BIZZNEST
-- Other Ways To Connect
+- BIZZNEST Hero
+- About BIZZNEST
+- Services + somthing
+- Portfolio Spotlight
+  Responsive Image Gallery With Animated Captions
+- Become A Client Today
+- Testimonials
+- CTA
+- Team
 - Footer

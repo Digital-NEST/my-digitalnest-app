@@ -5,6 +5,8 @@ import logo from './assets/nav-logo.png';
 import imgOne from './assets/nest-vision.jpg';
 import blogo from './assets/bizznest-logo.png';
 import gdimg from './assets/gd-img.jpg';
+import devimg from './assets/webdev-img.jpg';
+import bizzimg from './assets/about-bizz.png';
 
 function App() {
   return (
@@ -96,7 +98,7 @@ function App() {
             </div>
 
             <div className='step-img-box'>
-              <img src={imgOne} class='step-img' alt='' />
+              {/* <img src={bizzimg} class='step-img' alt='' /> */}
             </div>
           </div>
         </section>
@@ -138,24 +140,20 @@ function App() {
                   </li>
                   <li class='meal-attribute'>
                     <ion-icon class='meal-icon' name='map-outline'></ion-icon>
-                    <span>
-                      Flyers &reg; <strong>74</strong>
-                    </span>
+                    <span>Flyers</span>
                   </li>
                   <li class='meal-attribute'>
                     <ion-icon
                       class='meal-icon'
                       name='images-outline'
                     ></ion-icon>
-                    <span>
-                      <strong>Business Cards</strong> rating (537)
-                    </span>
+                    <span>Business Cards</span>
                   </li>
                 </ul>
               </div>
             </div>
             <div class='meal'>
-              <img src={gdimg} class='meal-img' alt='Japanese Gyozas' />
+              <img src={devimg} class='meal-img' alt='Japanese Gyozas' />
               <div class='meal-content'>
                 <div class='meal-tags'>
                   <span class='tag tag--vegetarian'>Branding</span>
@@ -163,20 +161,27 @@ function App() {
                 <p class='meal-title'>Web Design & Development</p>
                 <ul class='meal-attributes'>
                   <li class='meal-attribute'>
-                    <ion-icon class='meal-icon' name='bulb-outline'></ion-icon>
+                    <ion-icon
+                      class='meal-icon'
+                      name='construct-outline'
+                    ></ion-icon>
+
                     <span>Website Re-designs</span>
                   </li>
                   <li class='meal-attribute'>
                     <ion-icon
                       class='meal-icon'
-                      name='logo-instagram'
+                      name='desktop-outline'
                     ></ion-icon>
                     <span>
                       <strong>Front-end</strong> Development
                     </span>
                   </li>
                   <li class='meal-attribute'>
-                    <ion-icon class='meal-icon' name='map-outline'></ion-icon>
+                    <ion-icon
+                      class='meal-icon'
+                      name='server-outline'
+                    ></ion-icon>
                     <span>
                       <strong>Back-end</strong> Development
                     </span>
@@ -184,10 +189,10 @@ function App() {
                   <li class='meal-attribute'>
                     <ion-icon
                       class='meal-icon'
-                      name='images-outline'
+                      name='logo-wordpress'
                     ></ion-icon>
                     <span>
-                      <strong>Business Cards</strong> rating (537)
+                      <strong>WordPress</strong> & more
                     </span>
                   </li>
                 </ul>
@@ -199,99 +204,34 @@ function App() {
                 <div class='meal-tags'>
                   <span class='tag tag--vegetarian'>Branding</span>
                 </div>
-                <p class='meal-title'>Web Design & Development</p>
+                <p class='meal-title'>Video Production</p>
                 <ul class='meal-attributes'>
                   <li class='meal-attribute'>
-                    <ion-icon class='meal-icon' name='bulb-outline'></ion-icon>
-                    <span>Logos</span>
+                    <ion-icon class='meal-icon' name='cut-outline'></ion-icon>
+                    <span>Video Editing</span>
                   </li>
                   <li class='meal-attribute'>
                     <ion-icon
                       class='meal-icon'
-                      name='logo-instagram'
+                      name='megaphone-outline'
                     ></ion-icon>
-                    <span>
-                      <strong>Social Media</strong> Graphics
-                    </span>
-                  </li>
-                  <li class='meal-attribute'>
-                    <ion-icon class='meal-icon' name='map-outline'></ion-icon>
-                    <span>
-                      Flyers &reg; <strong>74</strong>
-                    </span>
+                    <span>Promotional Videos</span>
                   </li>
                   <li class='meal-attribute'>
                     <ion-icon
                       class='meal-icon'
-                      name='images-outline'
+                      name='school-outline'
                     ></ion-icon>
-                    <span>
-                      <strong>Business Cards</strong> rating (537)
-                    </span>
+                    <span>Instructional Videos</span>
+                  </li>
+                  <li class='meal-attribute'>
+                    <ion-icon
+                      class='meal-icon'
+                      name='videocam-outline'
+                    ></ion-icon>
+                    <span>Testimonial Videos</span>
                   </li>
                 </ul>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <div class='container grid grid--4-cols grid--center-v'>
-          <div class='step-text-box'>
-            <p class='step-number'>WHAT WE DO</p>
-            <h3 class='heading-primary'>Services</h3>
-            <p class='step-description'>
-              Our bizzNEST interns are hired into a paid, in-house two year
-              internship program that simulates a digital media agency. Our goal
-              is to deliver high-quality digital media services that both
-              empower your business or organization through creative marketing
-              collateral and provide interns the opportunity to polish their
-              technical and soft skills through on-the- job training and staff
-              mentorship.
-            </p>
-
-            <a class='main-nav-link nav-cta' href='#cta'>
-              Hire us
-            </a>
-          </div>
-
-          <div className='step-img-box'>
-            <div class='card'>
-              <div class='card-container'>
-                <img
-                  src='https://digitalnest.org/wp-content/uploads/2022/10/PPL_thumb.png'
-                  alt=''
-                />
-                <div class='meta'>
-                  <h2>People, Projects & Leadership</h2>
-                  <h3>People, Projects & Leadership</h3>
-                  <p>
-                    Lead teams, manage projects effectively, create influential
-                    marketing campaigns & coordinate events.
-                  </p>
-                  <button type='button'>Learn more</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <section class='section-how'>
-          <div class='container grid grid--3-cols'>
-            <div class='card'>
-              <div class='card-container'>
-                <img
-                  src='https://digitalnest.org/wp-content/uploads/2022/10/PPL_thumb.png'
-                  alt=''
-                />
-                <div class='meta'>
-                  <h2>People, Projects & Leadership</h2>
-                  <h3>People, Projects & Leadership</h3>
-                  <p>
-                    Lead teams, manage projects effectively, create influential
-                    marketing campaigns & coordinate events.
-                  </p>
-                  <button type='button'>Learn more</button>
-                </div>
               </div>
             </div>
           </div>

@@ -516,6 +516,22 @@ video {
 
 .section-how {
   padding: 12.6rem 0;
+  position: relative;
+}
+
+.section-how::before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.4;
+  background-image: url(./assets/background-matte.png);
+  background-repeat: no-repeat;
+  background-position: 80% 0;
+  background-size: cover;
+  z-index: 0;
 }
 
 .step-number {
@@ -548,19 +564,15 @@ video {
 .step-img-box {
   position: relative;
   display: flex;
-  flex-direction: column;
+
   align-items: center;
   justify-content: center;
-
-  /* background-image: url(./assets/nest-vision.jpg);
+  background-image: url(./assets/about-bizz.png);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; */
-}
 
-.step-img {
-  min-width: 380px;
-  padding: 4rem 0;
+  min-width: 100%;
+  min-height: 100%;
 }
 
 .step-img-box::before,
@@ -577,12 +589,12 @@ video {
 
 .step-img-box::before {
   width: 60%;
-  /* height: 60%; */
+  height: 60%;
 
-  /* 60% of parent's width */
+  /* 60% of parent's width  */
   padding-bottom: 60%;
 
-  background-color: var(--color-secondary-400);
+  background-color: var(--color-primary-300);
   z-index: -2;
 }
 
@@ -594,8 +606,10 @@ video {
 }
 
 .step-img {
-  width: 45%;
-  /* z-index: 10; */
+  max-width: 100%;
+  min-height: 110vh;
+
+  z-index: 10;
 }
 
 /**************************/
@@ -603,7 +617,7 @@ video {
 /**************************/
 
 .section-meals {
-  padding: 9.6rem 0;
+  padding: 12.6rem 0;
 }
 
 .meal {
