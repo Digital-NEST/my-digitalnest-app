@@ -98,13 +98,13 @@ function App() {
             </div>
 
             <div className='step-img-box'>
-              {/* <img src={bizzimg} class='step-img' alt='' /> */}
+              <img src={bizzimg} class='step-img' alt='' />
             </div>
           </div>
         </section>
 
         <section className='section-meals' id='meals'>
-          <div className='container center-text margin-bottom-md'>
+          <div className='container  margin-bottom-md'>
             <span className='subheading'>WHAT WE CREATE</span>
             <h2 className='heading-primary'>Services</h2>
             <p className='step-description'>
