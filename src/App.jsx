@@ -3,6 +3,8 @@ import reactLogo from './assets/react.svg';
 import './App.css';
 import logo from './assets/nav-logo.png';
 import imgOne from './assets/nest-vision.jpg';
+import blogo from './assets/bizznest-logo.png';
+import gdimg from './assets/gd-img.jpg';
 
 function App() {
   return (
@@ -51,78 +53,227 @@ function App() {
       <main>
         <section className='section-hero'>
           <div class='hero'>
-            <video className='hero-video' id='video-bg' controls>
-              <source
-                src='https://digitalnest.org/wp-content/uploads/2022/11/Untitled-3.mp4'
-                type='video/mp4'
-              />
-            </video>
+            <div class='hero-text-box'>
+              <img class='bizz-logo' alt='Omnifood logo' src={blogo} />
+              <h1 className='heading-primary-white'>
+                turn ideas into reality.
+              </h1>
+              <p class='hero-description'>
+                bizzNEST is a team of young creatives who provide
+                budget-friendly web design, video, graphic design and
+                photography services that help propel businesses forward to
+                achieve their goals.
+              </p>
+              <a href='#cta' class='btn btn--full margin-right-sm'>
+                Start eating well
+              </a>
+
+              <a href='#how' class='btn btn--outline'>
+                Learn more &darr;
+              </a>
+            </div>
           </div>
         </section>
 
         <section class='section-how' id='how'>
           <div class='container grid grid--2-cols grid--center-v'>
             <div class='step-text-box'>
-              <p class='step-number'>Our Vision</p>
-              <h3 class='heading-primary'>NEST Vision</h3>
+              <p class='step-number'>WHAT WE DO</p>
+              <h3 class='heading-primary'>About bizzNEST</h3>
               <p class='step-description'>
-                Latinx youth deserve the same access to resources to nurture
-                their talents, wisdom, and passions as their middle-class,
-                upper-class peers. Yet, these under-resourced communities remain
-                less likely to acquire career-building skills and graduate from
-                college or have robust networks to help them secure well-paying
-                jobs.
+                Our bizzNEST interns are hired into a paid, in-house two year
+                internship program that simulates a digital media agency. Our
+                goal is to deliver high-quality digital media services that both
+                empower your business or organization through creative marketing
+                collateral and provide interns the opportunity to polish their
+                technical and soft skills through on-the- job training and staff
+                mentorship.
               </p>
 
-              <p className='step-description-secondary'>
-                Digital NEST creates sustainable and scalable technology
-                learning centers for Latinx youth to provide the skills,
-                network, and resources to foster economic equality.We achieve
-                this by teaching our members the technical and soft skills to be
-                competitive in our digital world,
-              </p>
-              <a class='main-nav-link nav-cta' href='#cta'>
-                Donate
+              <a class='btn btn--outline' href='#cta'>
+                Hire us &rarr;
               </a>
             </div>
 
             <div className='step-img-box'>
               <img src={imgOne} class='step-img' alt='' />
-              <p className='step-description-tertiary'>
-                Providing mentors, and broadening networks to gain sustainable
-                employment.
-              </p>
-            </div>
-
-            <div class='step-img-box'>
-              <img src='img/app/app-screen-2.png' class='step-img' alt='' />
-            </div>
-            <div class='step-text-box'>
-              <p class='step-number'>Impact</p>
-              <h3 class='heading-tertiary'>Digital NEST Stories</h3>
-              <p class='step-description'>
-                It’s time to offer an even playing ground for our young people
-                and time to invest in a model proven to keep our youth home and
-                in successful career-track jobs!
-              </p>
-            </div>
-
-            <div class='step-text-box'>
-              <p class='step-number'>Connect</p>
-              <h3 class='heading-tertiary'>Get Involved</h3>
-              <p class='step-description'>
-                Digital NEST doesn’t just connect youth to the internet and
-                workforce training but to a broad network of local businesses,
-                elected leaders, community organizations and neighbors who
-                experience the ripple effects of opportunity and optimism seeded
-                at the NEST.
-              </p>
-            </div>
-            <div class='step-img-box'>
-              <img src='' class='step-img' alt='' />
             </div>
           </div>
         </section>
+
+        <section className='section-meals' id='meals'>
+          <div className='container center-text margin-bottom-md'>
+            <span className='subheading'>WHAT WE CREATE</span>
+            <h2 className='heading-primary'>Services</h2>
+            <p className='step-description'>
+              bizzNEST is a team of young creatives who provide budget-friendly
+              web design, video, graphic design and photography services that
+              help propel businesses forward to achieve their goals. bizzNEST
+              youth have access to the latest software and camera equipment to
+              deliver quality marketing services at below- market rates.
+            </p>
+          </div>
+
+          <div class='container grid grid--3-cols margin-bottom-md'>
+            <div class='meal'>
+              <img src={gdimg} class='meal-img' alt='Japanese Gyozas' />
+              <div class='meal-content'>
+                <div class='meal-tags'>
+                  <span class='tag tag--vegetarian'>Branding</span>
+                </div>
+                <p class='meal-title'>Graphic Design</p>
+                <ul class='meal-attributes'>
+                  <li class='meal-attribute'>
+                    <ion-icon class='meal-icon' name='bulb-outline'></ion-icon>
+                    <span>Logos</span>
+                  </li>
+                  <li class='meal-attribute'>
+                    <ion-icon
+                      class='meal-icon'
+                      name='logo-instagram'
+                    ></ion-icon>
+                    <span>
+                      <strong>Social Media</strong> Graphics
+                    </span>
+                  </li>
+                  <li class='meal-attribute'>
+                    <ion-icon class='meal-icon' name='map-outline'></ion-icon>
+                    <span>
+                      Flyers &reg; <strong>74</strong>
+                    </span>
+                  </li>
+                  <li class='meal-attribute'>
+                    <ion-icon
+                      class='meal-icon'
+                      name='images-outline'
+                    ></ion-icon>
+                    <span>
+                      <strong>Business Cards</strong> rating (537)
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class='meal'>
+              <img src={gdimg} class='meal-img' alt='Japanese Gyozas' />
+              <div class='meal-content'>
+                <div class='meal-tags'>
+                  <span class='tag tag--vegetarian'>Branding</span>
+                </div>
+                <p class='meal-title'>Web Design & Development</p>
+                <ul class='meal-attributes'>
+                  <li class='meal-attribute'>
+                    <ion-icon class='meal-icon' name='bulb-outline'></ion-icon>
+                    <span>Website Re-designs</span>
+                  </li>
+                  <li class='meal-attribute'>
+                    <ion-icon
+                      class='meal-icon'
+                      name='logo-instagram'
+                    ></ion-icon>
+                    <span>
+                      <strong>Front-end</strong> Development
+                    </span>
+                  </li>
+                  <li class='meal-attribute'>
+                    <ion-icon class='meal-icon' name='map-outline'></ion-icon>
+                    <span>
+                      <strong>Back-end</strong> Development
+                    </span>
+                  </li>
+                  <li class='meal-attribute'>
+                    <ion-icon
+                      class='meal-icon'
+                      name='images-outline'
+                    ></ion-icon>
+                    <span>
+                      <strong>Business Cards</strong> rating (537)
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class='meal'>
+              <img src={gdimg} class='meal-img' alt='Japanese Gyozas' />
+              <div class='meal-content'>
+                <div class='meal-tags'>
+                  <span class='tag tag--vegetarian'>Branding</span>
+                </div>
+                <p class='meal-title'>Web Design & Development</p>
+                <ul class='meal-attributes'>
+                  <li class='meal-attribute'>
+                    <ion-icon class='meal-icon' name='bulb-outline'></ion-icon>
+                    <span>Logos</span>
+                  </li>
+                  <li class='meal-attribute'>
+                    <ion-icon
+                      class='meal-icon'
+                      name='logo-instagram'
+                    ></ion-icon>
+                    <span>
+                      <strong>Social Media</strong> Graphics
+                    </span>
+                  </li>
+                  <li class='meal-attribute'>
+                    <ion-icon class='meal-icon' name='map-outline'></ion-icon>
+                    <span>
+                      Flyers &reg; <strong>74</strong>
+                    </span>
+                  </li>
+                  <li class='meal-attribute'>
+                    <ion-icon
+                      class='meal-icon'
+                      name='images-outline'
+                    ></ion-icon>
+                    <span>
+                      <strong>Business Cards</strong> rating (537)
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class='container grid grid--4-cols grid--center-v'>
+          <div class='step-text-box'>
+            <p class='step-number'>WHAT WE DO</p>
+            <h3 class='heading-primary'>Services</h3>
+            <p class='step-description'>
+              Our bizzNEST interns are hired into a paid, in-house two year
+              internship program that simulates a digital media agency. Our goal
+              is to deliver high-quality digital media services that both
+              empower your business or organization through creative marketing
+              collateral and provide interns the opportunity to polish their
+              technical and soft skills through on-the- job training and staff
+              mentorship.
+            </p>
+
+            <a class='main-nav-link nav-cta' href='#cta'>
+              Hire us
+            </a>
+          </div>
+
+          <div className='step-img-box'>
+            <div class='card'>
+              <div class='card-container'>
+                <img
+                  src='https://digitalnest.org/wp-content/uploads/2022/10/PPL_thumb.png'
+                  alt=''
+                />
+                <div class='meta'>
+                  <h2>People, Projects & Leadership</h2>
+                  <h3>People, Projects & Leadership</h3>
+                  <p>
+                    Lead teams, manage projects effectively, create influential
+                    marketing campaigns & coordinate events.
+                  </p>
+                  <button type='button'>Learn more</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
         <section class='section-how'>
           <div class='container grid grid--3-cols'>
