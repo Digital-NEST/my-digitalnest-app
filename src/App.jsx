@@ -2,11 +2,10 @@ import { useState } from 'react';
 import reactLogo from './assets/react.svg';
 import './App.css';
 import logo from './assets/nav-logo.png';
-import imgOne from './assets/nest-vision.jpg';
 import blogo from './assets/bizznest-logo.png';
 import gdimg from './assets/gd-img.jpg';
 import devimg from './assets/webdev-img.jpg';
-import bizzimg from './assets/about-img-one.png';
+import bizzimg from './assets/image-programs-DN.png';
 import bizzOne from './assets/img-bizznest-one.png';
 import bizzTwo from './assets/img-bizznest-two.png';
 import bizzThree from './assets/img-bizznest-three.png';
@@ -83,8 +82,8 @@ function App() {
         <section class='section' id='how'>
           <div class='container grid grid--2-cols grid--center-v'>
             <div class='step-text-box'>
-              <p class='step-text'>WHAT WE DO</p>
-              <h3 class='heading-primary'>About bizzNEST</h3>
+              <p class='subheading'>About</p>
+              <h3 class='heading-primary-styled'>bizzNEST</h3>
               <p class='step-description'>
                 Our bizzNEST interns are hired into a paid, in-house two year
                 internship program that simulates a digital media agency. Our
@@ -239,7 +238,7 @@ function App() {
             </div>
           </div>
         </section>
-        <section class='section' id='how'>
+        <section class='section section-bg' id='how'>
           <div class='container'>
             <span class='subheading'>Become a client</span>
             <h2 class='heading-secondary'>
