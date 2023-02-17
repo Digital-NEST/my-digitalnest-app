@@ -8,6 +8,13 @@ Latinx youth deserve the same access to resources to nurture their talents, wisd
 
 Digital NEST creates sustainable and scalable technology learning centers for Latinx youth to provide the skills, network, and resources to foster economic equality. We achieve this by teaching our members the technical and soft skills to be competitive in our digital world, providing mentors, and broadening networks to gain sustainable employment.
 
+## NEST Vision 2021
+
+technology & Digital Creative youth angency
+
+What We Do
+We're the go-to team of young creatives and professionals for budget-friendly web design, video, graphic design, and WordPress services that will supercharge your business. Our youth have cutting-edge software and camera equipment to deliver top-notch marketing services at unbeatable rates.
+
 ## Branding
 
 Headline:
@@ -65,7 +72,7 @@ Digital NEST’s Job Training and Career Development program help youth in high 
 - Services + somthing
 - Portfolio Spotlight - HOLD
   Responsive Image Gallery With Animated Captions -HOLD
-- Become A Client Today 
+- Become A Client Today
 - Testimonials
 - CTA
 - Team

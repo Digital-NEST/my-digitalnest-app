@@ -527,7 +527,7 @@ video {
   right: 0px;
   bottom: 0px;
   left: 0px;
-  opacity: 0.2;
+  opacity: 0.05;
   background-image: url(./assets/background-matte.png);
   background-repeat: no-repeat;
   background-position: 80% 0;
@@ -612,6 +612,14 @@ video {
   border-radius: 3rem;
 
   z-index: 10;
+}
+
+.big {
+  width: 110%;
+}
+
+.med {
+  width: 50%;
 }
 
 /**************************/

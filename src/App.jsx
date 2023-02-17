@@ -7,6 +7,9 @@ import blogo from './assets/bizznest-logo.png';
 import gdimg from './assets/gd-img.jpg';
 import devimg from './assets/webdev-img.jpg';
 import bizzimg from './assets/about-img-one.png';
+import bizzOne from './assets/img-bizznest-one.png';
+import bizzTwo from './assets/img-bizznest-two.png';
+import bizzThree from './assets/img-bizznest-three.png';
 
 function App() {
   return (
@@ -257,13 +260,13 @@ function App() {
             </div>
 
             <div className='step-img-box'>
-              <img src={bizzimg} class='step-img' alt='' />
+              <img src={bizzTwo} class='step-img big' alt='' />
             </div>
 
             {/* STEP 02 */}
 
             <div className='step-img-box'>
-              <img src={bizzimg} class='step-img' alt='' />
+              <img src={bizzOne} class='step-img' alt='' />
             </div>
 
             <div class='step-text-box'>
@@ -291,7 +294,7 @@ function App() {
             </div>
 
             <div className='step-img-box'>
-              <img src={bizzimg} class='step-img' alt='' />
+              <img src={bizzThree} class='step-img med' alt='' />
             </div>
           </div>
         </section>
