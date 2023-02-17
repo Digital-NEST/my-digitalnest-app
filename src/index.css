@@ -515,19 +515,19 @@ video {
 /* HOW IT WORKS SECTION */
 /**************************/
 
-.section-how {
-  padding: 9.6rem 0;
+.section {
+  padding: 12.6rem 0;
   position: relative;
 }
 
-.section-how::before {
+.section::before {
   content: '';
   position: absolute;
   top: 0px;
   right: 0px;
   bottom: 0px;
   left: 0px;
-  opacity: 0.4;
+  opacity: 0.2;
   background-image: url(./assets/background-matte.png);
   background-repeat: no-repeat;
   background-position: 80% 0;
@@ -536,11 +536,20 @@ video {
 }
 
 .step-number {
-  font-size: 1.6rem;
-  text-transform: uppercase;
-  font-weight: 400;
-  color: var(--color-primary-50);
+  font-weight: 500;
+  color: var(--color-secondary-50);
+  font-size: 9.6rem;
+  font-weight: 600;
   margin-bottom: 1.2rem;
+}
+
+.step-text {
+  font-size: 1.6rem;
+  letter-spacing: 1.1px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--color-secondary-300);
+  margin-bottom: 1.3rem;
 }
 
 .step-description {
@@ -568,10 +577,6 @@ video {
 
   align-items: center;
   justify-content: center;
-  /* background-image: url(./assets/about-bizz.png);
-  background-position: center;
-  background-repeat: no-repeat;
-/*  */
 }
 
 .step-img-box::before,
@@ -602,7 +607,9 @@ video {
 }
 
 .step-img {
-  max-width: 100%;
+  width: 80%;
+  padding: 1rem 0;
+  border-radius: 3rem;
 
   z-index: 10;
 }
@@ -613,6 +620,7 @@ video {
 
 .section-meals {
   padding: 12.6rem 0;
+  position: relative;
 }
 
 .meal {
@@ -1122,6 +1130,21 @@ video {
   .grid--3-cols,
   .grid--4-cols {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .section::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.2;
+    background-image: url(./assets/background-matte.png);
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+    background-size: cover;
+    z-index: 0;
   }
 
   .diets {

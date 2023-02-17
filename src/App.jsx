@@ -6,7 +6,7 @@ import imgOne from './assets/nest-vision.jpg';
 import blogo from './assets/bizznest-logo.png';
 import gdimg from './assets/gd-img.jpg';
 import devimg from './assets/webdev-img.jpg';
-import bizzimg from './assets/about-bizz.png';
+import bizzimg from './assets/about-img-one.png';
 
 function App() {
   return (
@@ -77,10 +77,10 @@ function App() {
           </div>
         </section>
 
-        <section class='section-how' id='how'>
+        <section class='section' id='how'>
           <div class='container grid grid--2-cols grid--center-v'>
             <div class='step-text-box'>
-              <p class='step-number'>WHAT WE DO</p>
+              <p class='step-text'>WHAT WE DO</p>
               <h3 class='heading-primary'>About bizzNEST</h3>
               <p class='step-description'>
                 Our bizzNEST interns are hired into a paid, in-house two year
@@ -236,25 +236,65 @@ function App() {
             </div>
           </div>
         </section>
-
-        {/* <section class='section-featured'>
+        <section class='section' id='how'>
           <div class='container'>
-            <h2 class='heading-featured-in'>As featured in</h2>
-            <div class='logos'>
-              <img src='img/logos/techcrunch.png' alt='Techcrunch logo' />
-              <img
-                src='img/logos/business-insider.png'
-                alt='Business Insider logo'
-              />
-              <img
-                src='img/logos/the-new-york-times.png'
-                alt='The New York Times logo'
-              />
-              <img src='img/logos/forbes.png' alt='Forbes logo' />
-              <img src='img/logos/usa-today.png' alt='USA Today logo' />
+            <span class='subheading'>Become a client</span>
+            <h2 class='heading-secondary'>
+              Your daily dose of health in 3 simple steps
+            </h2>
+          </div>
+
+          <div class='container grid grid--2-cols grid--center-v'>
+            <div class='step-text-box'>
+              <p class='step-number'>01</p>
+              <h3 class='heading-tertiary'>Project Request</h3>
+              <p class='step-description'>
+                Please take the time to complete our screening form. Provide us
+                with as much information as you can about what you would like
+                our team to build. We guarantee a response within 48 business
+                hours of submission.
+              </p>
+            </div>
+
+            <div className='step-img-box'>
+              <img src={bizzimg} class='step-img' alt='' />
+            </div>
+
+            {/* STEP 02 */}
+
+            <div className='step-img-box'>
+              <img src={bizzimg} class='step-img' alt='' />
+            </div>
+
+            <div class='step-text-box'>
+              <p class='step-number'>02</p>
+              <h3 class='heading-tertiary'>Client Intake Meeting</h3>
+              <p class='step-description'>
+                We'll get in touch with you and collect additional information
+                to help us determine if we are able to accommodate your needs
+                and ensure that the project is completed according to your
+                timeline. <strong> (We stay bizzsy at BizzNEST!)</strong> Rest
+                assured, we provide flexible timelines.
+              </p>
+            </div>
+
+            {/* STEP 03 */}
+
+            <div class='step-text-box'>
+              <p class='step-number'>03</p>
+              <h3 class='heading-tertiary'>Creat Contract</h3>
+              <p class='step-description'>
+                If you decide to work with us, we will craft a contract tailored
+                to your needs and budget. Once you sign off, we will get to work
+                right away!
+              </p>
+            </div>
+
+            <div className='step-img-box'>
+              <img src={bizzimg} class='step-img' alt='' />
             </div>
           </div>
-        </section> */}
+        </section>
       </main>
     </div>
   );
