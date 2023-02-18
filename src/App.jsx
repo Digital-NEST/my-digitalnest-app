@@ -297,6 +297,75 @@ function App() {
             </div>
           </div>
         </section>
+
+        <section class='section-cta' id='cta'>
+          <div class='container'>
+            <div class='cta'>
+              <div class='cta-text-box'>
+                <h2 class='heading-secondary'>bizzNEST Project Request</h2>
+                <p class='cta-text'>
+                  First, we need you to ﬁll out our screening form. Once you
+                  submit the form, we promise you will hear from us in 48 hours.
+                  Thank you for choosing us for your next project!
+                </p>
+
+                <form class='cta-form' name='project-request' netlify>
+                  <div>
+                    <label for='full-name'>Full Name</label>
+                    <input
+                      id='full-name'
+                      type='text'
+                      placeholder='John Smith'
+                      name='full-name'
+                      required
+                    />
+                  </div>
+
+                  <div>
+                    <label for='email'>Email address</label>
+                    <input
+                      id='email'
+                      type='email'
+                      placeholder='me@example.com'
+                      name='email'
+                      required
+                    />
+                  </div>
+                  <div>
+                    <label for='company-name'>Company Information</label>
+                    <input
+                      id='company-name'
+                      type='text'
+                      placeholder='DigitalNEST'
+                      name='company-name'
+                      required
+                    />
+                  </div>
+
+                  <div>
+                    <label for='service-needed'>
+                      What services do you need?
+                    </label>
+                    <select id='service-needed' name='service-needed' required>
+                      <option value=''>Please choose one option:</option>
+                      <option value='web-design'>Web Design</option>
+                      <option value='graphic'>Graphic Design</option>
+                      <option value='web-development'>Web Development</option>
+                      <option value='Video'>Video Production</option>
+                      <option value='multiple'>Multiple</option>
+                    </select>
+                  </div>
+
+                  <button class='btn btn--form'>Sign up now</button>
+
+                  {/* <input type='checkbox' />
+                  <input type='number' /> */}
+                </form>
+              </div>
+              <div class='cta-img-box' role='img' aria-label='bizzNEST'></div>
+            </div>
+          </div>
+        </section>
       </main>
     </div>
   );
