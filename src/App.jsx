@@ -309,12 +309,7 @@ function App() {
                   Thank you for choosing us for your next project!
                 </p>
 
-                <form
-                  class='cta-form'
-                  name='project-request'
-                  method='POST'
-                  data-netlify='true'
-                >
+                <form class='cta-form' name='project-request' netlify>
                   <div>
                     <label for='full-name'>Full Name</label>
                     <input
