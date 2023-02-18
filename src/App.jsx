@@ -309,7 +309,13 @@ function App() {
                   Thank you for choosing us for your next project!
                 </p>
 
-                <form class='cta-form' name='project-request' netlify>
+                <form
+                  class='cta-form'
+                  name='contact'
+                  method='post'
+                  data-netlify='true'
+                  data-netlify-honeypot='bot-field'
+                >
                   <div>
                     <label for='full-name'>Full Name</label>
                     <input
@@ -317,6 +323,8 @@ function App() {
                       type='text'
                       placeholder='John Smith'
                       name='full-name'
+                      value='contact'
+                      type='hidden'
                       required
                     />
                   </div>
