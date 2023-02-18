@@ -323,7 +323,6 @@ function App() {
                       type='text'
                       placeholder='John Smith'
                       name='full-name'
-                      value='contact'
                       required
                     />
                   </div>
