@@ -324,7 +324,6 @@ function App() {
                       placeholder='John Smith'
                       name='full-name'
                       value='contact'
-                      type='hidden'
                       required
                     />
                   </div>
